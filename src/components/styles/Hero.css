@@ -1,0 +1,59 @@
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    /* background:linear-gradient(135deg,#0f172a,#2563eb); */
+    color: rgb(255, 255, 255);
+    background-image: url("https://www.baltana.com/files/wallpapers-13/Digital-HD-Desktop-Wallpaper-35588.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero h1 {
+    font-size: 65px;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 8px rgba(0,0,0,0.7);
+    transition: 0.3s;
+
+}
+
+
+.hero p {
+    max-width: 600px;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.hero button {
+    padding: 14px 32px;
+    border: none;
+    background: #fff;
+    color: #2563eb;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+    transition:.3s;
+    font-size: 16px;
+    
+}
+
+
+.hero button:hover {
+    background: #fabe18;
+    color: #fff;
+    transform:scale(1.2);
+
+}
+
+@media(max-width:768px) {
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+}
