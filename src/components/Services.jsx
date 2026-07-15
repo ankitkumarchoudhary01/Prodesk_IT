@@ -19,7 +19,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section className="services">
+    <section id="services" className="services">
       <h2>Our Services</h2>
 
       <div className="service-grid">

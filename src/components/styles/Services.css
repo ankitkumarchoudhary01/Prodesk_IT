@@ -1,13 +1,13 @@
 .services {
-    padding: 80px 60px;
-    background: #f7f9fc;
+    padding: 40px 60px;
+    background: var(--bg-service);
+    color: var(--bg-service-text);
     text-align: center;
 }
 
 .services h2{
     font-size: 2.5rem;
     margin-bottom: 50px;
-    color: #1f2937;
 }
 
 .service-grid{
@@ -17,7 +17,7 @@
 }
 
 .card{
-    background:#fff;
+    background:var(--bg-card);
     border-radius:20px;
     overflow:hidden;
     box-shadow:0 10px 30px rgba(0,0,0,.08);
@@ -30,6 +30,8 @@
 .card:hover{
     transform:translateY(-12px);
     box-shadow:0 20px 40px rgba(0,0,0,.15);
+    border-width: 20px;
+    border-color: #ff0000;
 }
 
 .card-image{
@@ -59,11 +61,11 @@
 .card-content h3{
     font-size:1.6rem;
     margin-bottom:15px;
-    color:#222;
+    color:var(--card-heading);
 }
 
 .card-content p{
-    color:#666;
+    color:var(--card-text);
     line-height:1.7;
     font-size:1rem;
     flex:1;
@@ -71,8 +73,8 @@
 
 .service-btn{
     margin-top:25px;
-    border:none;
-    background:#2563eb;
+    border: 2px solid #fff;
+    background:var(--primary);
     color:#fff;
     padding:12px 24px;
     border-radius:50px;
