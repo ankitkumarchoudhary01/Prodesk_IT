@@ -18,10 +18,27 @@
     background: transparent;
     color: white;
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.5s ease;
 
 }
 
+.theme-toggle div {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    font-size: 15px;
+    
+    border-radius: 30px;
+    padding: 1px 8px;
+
+    border: 1.5px solid transparent; /* Reserve space */
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.theme-toggle div:hover {
+    border-color: #fff;
+    transform: scale(1.05);
+}
 
 
 .img {

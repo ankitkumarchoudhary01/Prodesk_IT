@@ -18,7 +18,7 @@ function Navbar() {
     <nav className="navbar">
       <div className="logo">
         <a href="#">
-        <img className="img" src="\prodesk_it_logo2.png" alt="Prodesk IT" />
+          <img className="img" src="\prodesk_it_logo2.png" alt="Prodesk IT" />
         </a>
       </div>
 
@@ -30,14 +30,36 @@ function Navbar() {
         <a href="#services">Services</a>
         <a href="#">Contact</a>
         <button
-        className="theme-toggle"
-        onClick={() => setDarkMode(!darkMode)}
-      >
-        {darkMode ? <img height="40" width="40" src="/lightmode.png" alt="Light Mode" /> : <img height="40" width="40" src="/darkmode.png" alt="Dark Mode" />}
-      </button>
+          className="theme-toggle"
+          onClick={() => setDarkMode(!darkMode)}
+        >
+          {
+            darkMode ? (
+              <div>
+              Switch to{" "}
+              <img
+                height="40"
+                width="40"
+                src="/lightmode.png"
+                alt="Light Mode"
+              />
+              </div>
+            ) : (
+              <div>
+                Switch to{" "}
+                <img
+                  height="40"
+                  width="40"
+                  src="https://static.thenounproject.com/png/1664849-200.png"
+                  alt="Dark Mode"
+                />
+              </div>
+            )
+          }
+          </button>
       </div>
 
-      
+
 
       <div
         className="hamburger"
