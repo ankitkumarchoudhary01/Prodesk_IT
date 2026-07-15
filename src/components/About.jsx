@@ -5,7 +5,6 @@ export default function About() {
       className="bg-[var(--bg-service)] py-20 px-6 md:px-16"
     >
       <div className="mx-auto max-w-6xl grid md:grid-cols-2 gap-12 items-center">
-        {/* Image */}
         <div>
           <img
             src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=675&auto=format&fit=crop&q=80"
@@ -14,7 +13,6 @@ export default function About() {
           />
         </div>
 
-        {/* Content */}
         <div>
           <h2 className="text-4xl font-bold text-[var(--card-heading)] mb-6">
             About Prodesk IT
