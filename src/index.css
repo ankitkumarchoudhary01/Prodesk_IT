@@ -1,3 +1,4 @@
+@import "tailwindcss";
 
 :root {
     --text-color: #ffffff;
@@ -6,21 +7,10 @@
     --bg-service-text: #000000;
     --bg-card: #ffffff;
     --card-heading: #000000;
-    --card-text: #666;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    --card-text: #666666;
+
     scroll-behavior: smooth;
 }
-
-body {
-    margin: 0;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    background: var(--bg-color);
-    color: var(--text-color);
-}
-
 
 body.dark-theme {
     --primary: #252424;
@@ -29,4 +19,12 @@ body.dark-theme {
     --bg-card: #2c2c2c;
     --card-heading: #ffffff;
     --card-text: #e7e7e7;
+}
+
+body {
+    background: var(--bg-service);
+    color: var(--bg-service-text);
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
 }
